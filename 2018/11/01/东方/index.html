@@ -127,32 +127,6 @@
 
 
 
-	<div id="vk_api_transport"></div>
-	<script type="text/javascript">
-		window.vkAsyncInit = function() {
-			VK.init({
-				apiId: 
-			});
-
-			
-				VK.Widgets.Like("vk_like", {type: "mini", height: 20});
-			
-
-			
-				VK.Widgets.Comments("vk_comments", {limit: 10, attach: "*"});
-			
-		};
-		setTimeout(function() {
-			var el = document.createElement("script");
-			el.type = "text/javascript";
-			el.src = "//vk.com/js/api/openapi.js";
-			el.async = true;
-			document.getElementById("vk_api_transport").appendChild(el);
-		}, 0);
-	</script>
-
-
-
 
 
 
@@ -274,47 +248,9 @@
       
 
       
-        <li class="menu-item menu-item-search">
-          
-            <a href="javascript:;" class="popup-trigger">
-          
-            
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
-            
-            Search
-          </a>
-        </li>
-      
     </ul>
   
 
-  
-    <div class="site-search">
-      
-  
-  <div class="algolia-popup popup search-popup">
-    <div class="algolia-search">
-      <div class="algolia-search-input-icon">
-        <i class="fa fa-search"></i>
-      </div>
-      <div class="algolia-search-input" id="algolia-search-input"></div>
-    </div>
-
-    <div class="algolia-results">
-      <div id="algolia-stats"></div>
-      <div id="algolia-hits"></div>
-      <div id="algolia-pagination" class="algolia-pagination"></div>
-    </div>
-
-    <span class="popup-btn-close">
-      <i class="fa fa-times-circle"></i>
-    </span>
-  </div>
-
-
-
-
-    </div>
   
 </nav>
 
@@ -392,7 +328,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2018/11/01/东方/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count fb-comments-count" data-href="http://yoursite.com/2018/11/01/东方/" itemprop="commentCount">0</span> comments
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/11/01/东方/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -469,24 +405,6 @@
 
       
       
-        <div class="post-widgets">
-        
-
-        
-          <div class="social-like">
-            
-              <div class="vk_like">
-                <span id="vk_like"></span>
-              </div>
-            
-
-            
-          </div>
-        
-
-        
-        </div>
-      
       
 
       
@@ -532,7 +450,12 @@
 
   
     <div class="comments" id="comments">
-      <div id="vk_comments"></div>
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
     </div>
 
   
@@ -879,19 +802,6 @@
   
 
 
-
-
-  
-  
-  
-  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
-
-  
-  
-  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
-  
-
-  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
