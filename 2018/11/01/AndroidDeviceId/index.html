@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="生活,">
+  <meta name="keywords" content="Android,">
 
 
 
@@ -79,18 +79,20 @@
 
 
 
-<meta name="description" content="内心的天空也要懂得探究">
-<meta name="keywords" content="生活">
+<meta name="description" content="Android唯一设备号方案一具体做法 生成UUID 保存在APP中 保存在SD卡中 APP和SD卡相互保存，防止用户卸载APP或者删除SD卡文件代码部分截图  快速集成1.添加依赖在项目的build.gradle中，需要在allprojects最后添加jitpack 1234567allprojects &amp;#123;    repositories &amp;#123;       ...">
+<meta name="keywords" content="Android">
 <meta property="og:type" content="article">
-<meta property="og:title" content="123456">
-<meta property="og:url" content="http://yoursite.com/2018/11/01/sdfrg/index.html">
+<meta property="og:title" content="AndroidDeviceId">
+<meta property="og:url" content="http://yoursite.com/2018/11/01/AndroidDeviceId/index.html">
 <meta property="og:site_name" content="东方之路">
-<meta property="og:description" content="内心的天空也要懂得探究">
+<meta property="og:description" content="Android唯一设备号方案一具体做法 生成UUID 保存在APP中 保存在SD卡中 APP和SD卡相互保存，防止用户卸载APP或者删除SD卡文件代码部分截图  快速集成1.添加依赖在项目的build.gradle中，需要在allprojects最后添加jitpack 1234567allprojects &amp;#123;    repositories &amp;#123;       ...">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-29T09:29:54.189Z">
+<meta property="og:image" content="http://yoursite.com/2018/11/01/res/androiddeviceid_screenshot/01.png">
+<meta property="og:updated_time" content="2019-02-25T12:26:26.886Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="123456">
-<meta name="twitter:description" content="内心的天空也要懂得探究">
+<meta name="twitter:title" content="AndroidDeviceId">
+<meta name="twitter:description" content="Android唯一设备号方案一具体做法 生成UUID 保存在APP中 保存在SD卡中 APP和SD卡相互保存，防止用户卸载APP或者删除SD卡文件代码部分截图  快速集成1.添加依赖在项目的build.gradle中，需要在allprojects最后添加jitpack 1234567allprojects &amp;#123;    repositories &amp;#123;       ...">
+<meta name="twitter:image" content="http://yoursite.com/2018/11/01/res/androiddeviceid_screenshot/01.png">
 
 
 
@@ -120,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/11/01/sdfrg/">
+  <link rel="canonical" href="http://yoursite.com/2018/11/01/AndroidDeviceId/">
 
 
 
 
 
-  <title>123456 | 东方之路</title>
+  <title>AndroidDeviceId | 东方之路</title>
   
 
 
@@ -263,7 +265,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/01/sdfrg/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/01/AndroidDeviceId/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="张东方">
@@ -280,7 +282,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">123456</h1>
+          <h1 class="post-title" itemprop="name headline">AndroidDeviceId</h1>
         
 
         <div class="post-meta">
@@ -308,8 +310,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-01-29T17:29:54+08:00">
-                2019-01-29
+              <time title="更新于" itemprop="dateModified" datetime="2019-02-25T20:26:26+08:00">
+                2019-02-25
               </time>
             
           </span>
@@ -327,8 +329,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/日记/" itemprop="url" rel="index">
-                    <span itemprop="name">日记</span>
+                  <a href="/categories/Android/" itemprop="url" rel="index">
+                    <span itemprop="name">Android</span>
                   </a>
                 </span>
 
@@ -345,8 +347,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/11/01/sdfrg/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/11/01/sdfrg/" itemprop="commentCount"></span>
+                <a href="/2018/11/01/AndroidDeviceId/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/11/01/AndroidDeviceId/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -405,7 +407,19 @@
       
 
       
-        
+        <h2 id="Android唯一设备号"><a href="#Android唯一设备号" class="headerlink" title="Android唯一设备号"></a>Android唯一设备号</h2><h2 id="方案一"><a href="#方案一" class="headerlink" title="方案一"></a>方案一</h2><h3 id="具体做法"><a href="#具体做法" class="headerlink" title="具体做法"></a>具体做法</h3><ul>
+<li>生成UUID</li>
+<li>保存在APP中</li>
+<li>保存在SD卡中</li>
+<li>APP和SD卡相互保存，防止用户卸载APP或者删除SD卡文件<h3 id="代码部分截图"><a href="#代码部分截图" class="headerlink" title="代码部分截图"></a>代码部分截图</h3><img src="../res/androiddeviceid_screenshot/01.png" alt="Screenshot"></li>
+</ul>
+<h3 id="快速集成"><a href="#快速集成" class="headerlink" title="快速集成"></a>快速集成</h3><h4 id="1-添加依赖"><a href="#1-添加依赖" class="headerlink" title="1.添加依赖"></a>1.添加依赖</h4><p>在项目的<code>build.gradle</code>中，需要在<code>allprojects</code>最后添加<code>jitpack</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">allprojects &#123;</span><br><span class="line">    repositories &#123;</span><br><span class="line">       ...</span><br><span class="line"></span><br><span class="line">        maven &#123; url &apos;https://jitpack.io&apos; &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在APP的<code>build.gradle</code>中添加如下依赖，版本号以最新为准</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">implementation &apos;com.github.zdf01082413:AndroidDeviceId:1.0&apos;</span><br></pre></td></tr></table></figure>
+<h4 id="2-直接使用"><a href="#2-直接使用" class="headerlink" title="2.直接使用"></a>2.直接使用</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// 1. path 如需要自己设置</span><br><span class="line">val Path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_ALARMS).toString() + File.separator + &quot;AndroidDeviceId&quot;</span><br><span class="line">CustomDeviceId.init(this).setFilePath(Path).getCustomDeviceId</span><br><span class="line"></span><br><span class="line">// 2. path 也可不要，因有默认位置</span><br><span class="line">CustomDeviceId.init(this)getCustomDeviceId</span><br></pre></td></tr></table></figure>
+<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p>务必在使用前判断SD卡权限，否则会直接出错，库中没有做SD卡权限申请或判断。</p>
+
       
     </div>
     
@@ -422,7 +436,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/生活/" rel="tag"># 生活</a>
+            <a href="/tags/Android/" rel="tag"># Android</a>
           
         </div>
       
@@ -435,8 +449,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/01/video_java/" rel="next" title="Video-Java">
-                <i class="fa fa-chevron-left"></i> Video-Java
+              <a href="/2018/11/01/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
               </a>
             
           </div>
@@ -445,8 +459,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/11/01/东方/" rel="prev" title="东方">
-                东方 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/11/01/video_java/" rel="prev" title="Video-Java">
+                Video-Java <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -509,8 +523,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -852,6 +875,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Android唯一设备号"><span class="nav-number">1.</span> <span class="nav-text">Android唯一设备号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方案一"><span class="nav-number">2.</span> <span class="nav-text">方案一</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#具体做法"><span class="nav-number">2.1.</span> <span class="nav-text">具体做法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码部分截图"><span class="nav-number">2.2.</span> <span class="nav-text">代码部分截图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#快速集成"><span class="nav-number">2.3.</span> <span class="nav-text">快速集成</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-添加依赖"><span class="nav-number">2.3.1.</span> <span class="nav-text">1.添加依赖</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-直接使用"><span class="nav-number">2.3.2.</span> <span class="nav-text">2.直接使用</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注意"><span class="nav-number">2.4.</span> <span class="nav-text">注意</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -1025,9 +1064,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2018/11/01/sdfrg/';
-          this.page.identifier = '2018/11/01/sdfrg/';
-          this.page.title = '123456';
+          this.page.url = 'http://yoursite.com/2018/11/01/AndroidDeviceId/';
+          this.page.identifier = '2018/11/01/AndroidDeviceId/';
+          this.page.title = 'AndroidDeviceId';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://dongfang.disqus.com/embed.js';
